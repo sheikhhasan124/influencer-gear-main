@@ -60,6 +60,19 @@ header{
   /* width: 50%; */
   margin-right: 50px;
 }
+@keyframes noracora{
+    0%{
+        width:196px ;
+     
+    }
+    100%{
+        width:210px ;
+        height: 60px;
+        background-color: orange;
+        transform: rotate(3deg);
+    }
+}
+
 .click-button{
 background-color: rgb(214, 59, 137);
 color: white;
@@ -70,7 +83,14 @@ width:196px ;
 height: 44px;
 border-radius: 25px;
 border: none;
+
+animation:noracora 1s ease-in-out 0.5s infinite alternate;
+animation-play-state: running;
 }
+.click-button{
+   
+}
+
 .click-button a{
     color: white;
     font-weight: 800;
@@ -78,6 +98,7 @@ border: none;
 .button-arrow{
     margin-left: 10px;
 }
+
 /* add section end one  */
 /*add section two start  */
   .adds{
@@ -109,13 +130,13 @@ border: none;
     height: 476px;
    background-color: rgb(255, 253, 253);
    box-shadow: 1px 1px 10px #fff, -1px -1px 10px gray;
-   /* padding: 20px 10px; */
+ 
    border-radius: 15px;
 }
 .collection-btn{
      display: flex;
     justify-content: flex-end;
-    /* align-items: flex-end; */
+    
     
 
 }
@@ -146,8 +167,9 @@ border: none;
 .item-details h3{
     margin: 0 0 15px 0;
 }
-.rating{
-    /* margin-right: 10px; */
+.rating .empty{
+    color: rgb(219, 215, 215);
+    font-size: 11px;
 }
 .rating .filled{
     color: #FB8200;
@@ -342,7 +364,7 @@ footer{
     margin: 0 5px;
     background-color: rgb(202, 186, 186);
     border-radius: 10px;
-    box-shadow: 1px 1px 5px white,-1px -1px 5px white;
+    box-shadow: 1px 1px 2px white,-1px -1px 2px white;
 }
 .fa-facebook{
     color: #3b5998;
@@ -361,8 +383,8 @@ footer{
    
 }
 /* footer end  */
-/* media quarry */
-/* for mobile  */
+/* ............media quarry ..............*/
+           /* for mobile  */
 @media screen and (max-width:688px){
     .container{
         width: 70%;
@@ -374,8 +396,7 @@ footer{
         flex-direction: column;
     }
     .influence-sections{
-        /* display: grid;
-        grid-template-columns: repeat(2,1fr); */
+      
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
