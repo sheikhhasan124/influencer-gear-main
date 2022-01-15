@@ -6,10 +6,10 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-    /* text-align: justify; */
+    
 }
 body{
-    /* width: 1200px; */
+    
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -84,7 +84,7 @@ height: 44px;
 border-radius: 25px;
 border: none;
 
-animation:noracora 1s ease-in-out 0.5s infinite alternate;
+animation:noracora 1.5s ease-in-out 0.5s infinite alternate;
 animation-play-state: running;
 }
 .click-button{
